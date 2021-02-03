@@ -10,7 +10,9 @@ import com.example.flowstateflowpoc.shared.extensions.loadImage
 import kotlinx.android.synthetic.main.holder_photo.view.*
 
 class PhotoAdapter : RecyclerView.Adapter<PhotoAdapter.ViewHolder>() {
+
     var photos: List<Photo> = listOf()
+
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         return ViewHolder(parent.inflate(R.layout.holder_photo))
     }
