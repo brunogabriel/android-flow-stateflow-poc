@@ -6,11 +6,17 @@ import kotlinx.coroutines.flow.Flow
 
 interface MVPPhotoContract {
     interface View {
-        fun showPhotos(photos: List<Photo>)
+        fun showLoading()
+        fun dismissLoading()
+        fun showError()
+        fun showCancellation()
+        fun showPhotos(newPhotos: List<Photo>)
     }
 
     interface Presenter {
-
+        fun takePhotos()
+        fun cancelTakePhotos()
+        fun willDestroy()
     }
 
     interface UseCase {
