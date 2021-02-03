@@ -53,16 +53,19 @@ dependencies {
     testImplementation 'org.jetbrains.kotlinx:kotlinx-coroutines-test:1.4.2'
 
     // mockk
-    testImplementation "io.mockk:mockk:1.10.5"
+    testImplementation 'io.mockk:mockk:1.10.5'
 
     // truth
-    testImplementation "com.google.truth:truth:1.1.2"
+    testImplementation 'com.google.truth:truth:1.1.2'
 
     // picasso
     implementation 'com.squareup.picasso:picasso:2.8'
 
     // chucker
-    debugImplementation "com.github.chuckerteam.chucker:library:3.4.1-SNAPSHOT"
-    releaseImplementation "com.github.chuckerteam.chucker:library-no-op:3.4.1-SNAPSHOT"
+    debugImplementation 'com.github.chuckerteam.chucker:library:3.4.1-SNAPSHOT'
+    releaseImplementation 'com.github.chuckerteam.chucker:library-no-op:3.4.1-SNAPSHOT'
+
+    // ktx
+    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.2.0'
 
 }
