@@ -55,6 +55,9 @@ dependencies {
     // mockk
     testImplementation "io.mockk:mockk:1.10.5"
 
+    // truth
+    testImplementation "com.google.truth:truth:1.1.2"
+
     // picasso
     implementation 'com.squareup.picasso:picasso:2.8'
 
