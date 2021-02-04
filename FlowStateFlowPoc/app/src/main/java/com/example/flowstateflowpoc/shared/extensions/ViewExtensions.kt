@@ -1,5 +1,6 @@
 package com.example.flowstateflowpoc.shared.extensions
 
+import android.view.View
 import android.widget.ImageView
 import com.squareup.picasso.Callback
 import com.squareup.picasso.NetworkPolicy
@@ -14,3 +15,12 @@ fun ImageView.loadImage(url: String) = Picasso.get()
             Picasso.get().load(url).into(this@loadImage)
         }
     })
+
+
+fun View.show() {
+    visibility = View.VISIBLE
+}
+
+fun View.dismiss() {
+    visibility = View.GONE
+}
