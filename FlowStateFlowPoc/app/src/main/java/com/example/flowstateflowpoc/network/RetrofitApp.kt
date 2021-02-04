@@ -10,6 +10,7 @@ import okhttp3.OkHttpClient
 import retrofit2.Retrofit
 import retrofit2.adapter.rxjava3.RxJava3CallAdapterFactory
 import retrofit2.converter.gson.GsonConverterFactory
+import java.util.concurrent.TimeUnit
 
 object RetrofitApp {
 
@@ -17,6 +18,8 @@ object RetrofitApp {
 
     fun initialize(context: Context) {
         val okHttpClient = OkHttpClient.Builder()
+            .connectTimeout(30L, TimeUnit.SECONDS)
+            .readTimeout(30L, TimeUnit.SECONDS)
             .addInterceptor(provideChuckerInterceptor(context))
             .build()
 
