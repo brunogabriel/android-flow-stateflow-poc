@@ -24,6 +24,8 @@
 
         <activity android:name=".mvvm.presentation.MVVMPhotoActivity"/>
 
+        <activity android:name=".mvvmrx.presentation.MVVMRxPhotoActivity"/>
+
     </application>
 
 </manifest>

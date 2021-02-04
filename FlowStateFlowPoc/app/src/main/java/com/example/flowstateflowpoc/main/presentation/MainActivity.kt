@@ -7,6 +7,7 @@ import androidx.recyclerview.widget.DividerItemDecoration
 import com.example.flowstateflowpoc.R
 import com.example.flowstateflowpoc.mvp.presentation.MVPPhotoActivity
 import com.example.flowstateflowpoc.mvvm.presentation.MVVMPhotoActivity
+import com.example.flowstateflowpoc.mvvmrx.presentation.MVVMRxPhotoActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -28,7 +29,7 @@ class MainActivity : AppCompatActivity() {
                             startScreen(MVPPhotoActivity::class.java)
                         },
                         MainItemHolder("MVVM - Rx", "Model View View-Model") {
-
+                            startScreen(MVVMRxPhotoActivity::class.java)
                         },
                 )
             }
